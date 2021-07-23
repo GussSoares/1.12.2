@@ -27,10 +27,10 @@ fi
 #$home/ngrok authtoken 1cMj54TxX3DSjHuDsuvZY2Av73v_79eZpYVvscMVSc7xC15YX
 #nohup $home/ngrok tcp --region=us 25565 &
 
-echo ""
-ip=$(curl --silent http://127.0.0.1:4040/api/tunnels | jq '.tunnels[0].public_url')
-echo "IP DO SERVIDOR: $ip"
-echo "
+#echo ""
+#ip=$(curl --silent http://127.0.0.1:4040/api/tunnels | jq '.tunnels[0].public_url')
+#echo "IP DO SERVIDOR: $ip"
+#echo ""
 java -Xmx1024m -Xms1024m -jar forge-1.12.2-14.23.5.2855.jar nogui &
 
 

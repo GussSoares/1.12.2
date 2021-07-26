@@ -13,7 +13,7 @@ cd
 cd 1.12.2
 
 # pega pid do antigo processo java
-old_java=$(pgrep -f java)
+old_java=$(pgrep -f 1.12.2)
 if [ ${#old_java} -ge 3 ]
 then
 	echo "Processo anterior com id: $old_java"
